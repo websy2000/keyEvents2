@@ -4,14 +4,19 @@
         <title>key Events2</title>
     </head>
     <body>
-        <input type="text" id="keyevent2" onkeydown="event2()" onkeyup="event3()">
+        <input type="text" id="keyevent2" onkeypress="keyPress()" onkeyup="event3()">
         <script>
+            /*
             const event2 = () => {
                 document.getElementById("keyevent2").style.background="green";
             }
-
+*/
             const event3 = () => {
                 document.getElementById("keyevent2").style.background="red";
+            }
+
+            const keyPress = () => {
+                document.getElementById("keyevent2").style.background="orange";
             }
         </script>
     </body>
